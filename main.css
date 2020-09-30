@@ -1,0 +1,217 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url('resources/background.jpg');
+    background-repeat: repeat;
+    font-family: /*"Segoe UI Light",*/ Tahoma, Arial;
+    font-size: 11pt;
+    font-weight: normal;
+    font-style: normal;
+    color: #444;
+}
+
+.title {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.subtle {
+    font-size: 9pt;
+    color: #999;
+}
+
+.bordered {
+    border: 2px solid #666;
+}
+
+.spaced-s {
+    margin-bottom: 10px;
+}
+
+.button {
+    padding: 0 10px;
+    /*width: 100px;*/
+    line-height: 22px;
+    border: 2px solid #666;
+    cursor: pointer;
+    text-align: center;
+}
+
+.button:hover {
+    background-color: #AAA;
+}
+
+.checkbox {
+    font-size: 10pt;
+    font-weight: normal;
+    line-height: 20px;
+}
+
+.loader {
+    width: 32px;
+    height: 32px;
+    background-image: url('resources/loader.gif');
+}
+
+#banner {
+    margin: auto;
+    padding: 10px 0;
+    width: 1200px;
+    height: 80px;
+    background-image: url('resources/banner.png');
+    background-position: bottom center;
+    background-repeat: no-repeat;
+}
+
+#bannerBottom {
+    margin: auto auto 20px auto;
+    width: 1200px;
+    height: 2px;
+    background-image: url('resources/separator-h.png');
+}
+
+#mainContainer {
+    position: relative;
+    margin: auto;
+    width: 1200px;
+}
+
+#sourceContainer {
+    position: absolute;
+    left: 122px;
+    width: 450px;
+    min-height: 600px;
+}
+
+#buttonContainer {
+    position: absolute;
+    left: 0px;
+    top: 50px;
+    width: 124px;
+}
+
+#buttonContainer > div {
+    position: relative;
+    margin: 0 0 5px auto;
+    width: 90px;
+}
+
+#compileButton {
+    position: relative;
+    width: 100px !important;
+}
+
+
+#outputContainer {
+    position: absolute;
+    left: 590px;
+    top: 0px; /* 23px */
+    width: 610px;   
+}
+
+/* Token Stream */
+#tokenStreamContainer {
+    height: 46px;
+}
+
+#tokenStream {
+    width: 100%;
+    line-height: 22px;
+    font-family: "Consolas", "Courier New", monospace;
+    font-size: 14pt;
+    overflow: hidden;
+}
+
+#tokenStream .number {
+    vertical-align: middle;
+    font-size: 10pt;
+    color: #999;
+}
+
+#tokenStreamOverlay {
+    position: absolute;
+    top: 24px;
+    left: 0;
+    width: 100%;
+    height: 22px;
+    background-image: url('resources/token-stream-overlay.png');
+    overflow: hidden;
+}
+
+/* Syntax Tree */
+#syntaxTreeContainer {
+    width: 300px;
+}
+
+#ast, #cst {
+    width: 300px;
+    height: 250px;
+}
+
+/* Symbol Table */
+#symbolTableContainer {
+    position: absolute;
+    top: 55px;
+    left: 320px;
+    width: 290px;
+    height: 250px;
+}
+
+#symbolTable {
+    width: 100%;
+    height: 250px;
+    font-family: "Consolas", "Courier New", monospace;
+    font-size: 11pt;
+    overflow-y: scroll;
+}
+
+#symbolTable table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#symbolTable table tr > th {
+    vertical-align: bottom;
+}
+
+#symbolTable table tr > td {
+    border-top: 1px solid black;
+    text-align: center;
+}
+
+#symbolTable table tr * {
+    padding: 0 5px;
+}
+
+/* Text output */
+#textOutput {
+    width: 100%;
+    height: 250px;
+    font-family: "Consolas", "Courier New", monospace;
+    font-size: 11pt;
+    overflow-y: scroll;
+}
+
+#ncc1701d {
+    position: fixed;
+    top: -886px;
+    width: 2900px;
+    height: 886px;
+    background-image: url('resources/ncc1701d-front.png');
+    background-size: 100% 100%;
+    z-index: 200;
+}
+
+#borgcube {
+    position: fixed;
+    top: -2650px;
+    width: 2900px;
+    height: 2650px;
+    background-image: url('resources/borgcube-front.png');
+    background-size: 100% 100%;
+    z-index: 200;
+}
